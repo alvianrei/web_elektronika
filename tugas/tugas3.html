@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tugas 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">Tugas 3</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+  
+  <hr id="tugas1">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Eksperimen Menggunakan Proteus</h3><br>
+    <img src="img/tugas3a.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>Arduino</b></h4>
+      <p>Arduino Uno adalah board mikrokontroler berbasis ATmega328 (datasheet). Memiliki 14 pin input dari output digital dimana 6 pin input tersebut dapat digunakan sebagai output PWM dan 6 pin input analog, 16 MHz osilator kristal, koneksi USB, jack power, ICSP header, dan tombol reset. Untuk mendukung mikrokontroler agar dapat digunakan, cukup hanya menghubungkan Board Arduino Uno ke komputer dengan menggunakan kabel USB atau listrik dengan AC yang-ke adaptor-DC atau baterai untuk menjalankannya.</p>
+      <p>Disini kami diminta oleh Dosen Elektronika kami untuk mencoba bereksperimen dengan Proteus di device kami. Saya mencoba untuk membuat rangkaian sesuai dengan PDF Eksperimen TRIN. Komponen yang digunakan di Proteus untuk eksperimen kali ini adalah Battery, Resistor, Sensor Arus dan Sensor Tegangan.</p>
+      <img src="img/tugas3b.png" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+      <p>Disini saya menyambungkan Arduino Uno dengan sambungan kabel 2,3,4,5,11, dan 12 ke sambungan kabel LCD 4,6,11,12,13, dan 14. Saya juga menggunakan sensor bertipe ACS712ELCTR-20A-T dan menyambungkan kabel VIOUT pada sensor ke PC0 Arduino. Baterai yang digunakan memuat tegangan 13,5 V dengan resistor 1k.</p>
+    </div>
+  </div>
+  <hr>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
